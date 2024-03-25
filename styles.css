@@ -1,0 +1,238 @@
+.hidden-div {
+  display: none;
+}
+
+.invisible-div {
+  visibility: hidden;
+}
+
+/* .rightNav {
+  width: 30%;
+  text-align: right;
+  padding: 0 23px;
+}
+.btn {
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+  font-size: 16px;
+} */
+
+/* new css added for bettle - bettle */
+
+ul li {
+  padding-left: 40px;
+  background-image: url(https://assets-global.website-files.com/655c11e42ee199775ea5f50d/6574afbfda53be015bce4849_Group%201000007306.svg);
+  background-position: 0% 5%;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+  counter-reset: item;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+}
+
+ol li {
+  display: block !important;
+}
+
+ol li::before {
+  content: counter(item);
+  counter-increment: item;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.44%;
+  /* 144.444% */
+  background-color: #805bc3;
+  /* Background color for the bullet */
+  color: #fff;
+  /* Text color for the number */
+  border-radius: 50%;
+  /* Optional: Create a circular background */
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  margin-right: 16px;
+  /* Adjust the spacing between the number and the text */
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+
+/* Add a custom arrow using a background image */
+select::-ms-expand {
+  display: none;
+}
+
+/* Add a custom arrow using a background image */
+select {
+  background: url("https://assets-global.website-files.com/65502a2d4f72e4804b7894f3/658da00346e668ae22ef6b80_dropdown%20arrow.svg")
+    no-repeat right 20px center;
+  /* Adjust the padding to make space for the custom arrow */
+}
+
+.r-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.r-inner-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.r-input {
+  width: 100%;
+  height: 12px;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  z-index: 5;
+  margin: 0px;
+  border-radius: 60px;
+  background: none;
+}
+
+.r-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* background-color: yellow; */
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.r-track {
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 100px;
+  background: rgba(135, 83, 212, 0.2);
+}
+
+.r-progress-bar {
+  width: 50%;
+  height: 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 100px;
+  background-color: #8753d4;
+}
+
+.r-selector {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.r-selector-knob {
+  width: 48px;
+  height: 48px;
+  border: 6px solid #8753d4;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: flex;
+  /* place-content: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+.r-selector-value {
+  margin: 0px;
+  font-size: 16px;
+  color: #8753d4;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0%;
+  /* 150% */
+}
+
+.val-wrap {
+  width: 36px;
+  text-align: center;
+}
+
+/* Number Input Style */
+.n-container {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.n-input {
+  width: 100%;
+  padding: 17px 20px;
+  border-radius: 100px;
+  border: none;
+  background: rgba(234, 223, 248, 0.6);
+  color: #120920;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144.44%;
+  /* 144.444% */
+}
+
+.n-input:focus {
+  outline: none;
+}
+
+/* add custom cursor */
+.typed-words::after {
+  content: "|";
+  display: inline;
+  animation: blink 1s infinite;
+}
+
+/* custom cursor animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
