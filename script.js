@@ -137,8 +137,6 @@ if (adwardsForms) {
   });
 }
 
-//---------------------
-
 const _0x26dfbd = _0xe5a4;
 function _0x431c() {
   const _0x365a53 = [
@@ -431,8 +429,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
-
-//-------------------
 
 var typed = new Typed(".typed-words", {
   strings: [
